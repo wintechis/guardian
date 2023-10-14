@@ -1,0 +1,7 @@
+{
+    "fields":
+    [{
+    "name": "col1",
+    "type": "integer"
+    }]
+}

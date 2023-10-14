@@ -1,0 +1,71 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix val: <http://purl.org/graphguard/ontology#> .
+
+val:QualityContract1 a val:QualityContract ;
+dcat:identifier "MyQualityContract";
+    odrl:target [
+        a dcat:Dataset;
+        dcat:identifier "LoadData";
+        dcat:format "pandas/dataframe"
+    ] ;
+    prof:isProfileOf [
+        a val:QualityConstraint;
+        dcat:identifier "LoadedDataConstraint";
+        val:severeity "error" ;
+        prof:hasResource [
+            prof:hasArtifact <https://renedorsch.solidweb.org/validation_code/sensor_constraints.yml> ;
+            dct:conformsTo <https://specs.frictionlessdata.io/data-package/> ;
+            dct:format "application/yaml" ;
+            spdx:checksum [
+                spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> ;
+                spdx:checksumValue "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd"
+            ]
+        ]
+    ] .
+val:QualityContract2 a val:QualityContract ;
+dcat:identifier "MyQualityContract";
+    odrl:target [
+        a dcat:Dataset;
+        dcat:identifier "ProcessData";
+        dcat:format "pandas/dataframe"
+    ] ;
+    prof:isProfileOf [
+        a val:QualityConstraint;
+        dcat:identifier "ProcessedDataConstraint";
+        val:severeity "error" ;
+        prof:hasResource [
+            prof:hasArtifact <https://renedorsch.solidweb.org/validation_code/temperature_validation.py> ;
+            dct:conformsTo <http://python.org> ;
+            dct:format "text/x-python" ;
+            spdx:checksum [
+                spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_md5> ;
+                spdx:checksumValue "fda5c517ef55f972d553aca951caf506"
+            ]
+        ]
+    ] .
+
+val:QualityContract3 a val:QualityContract ;
+dcat:identifier "MyQualityContract";
+    odrl:target [
+        a dcat:Dataset;
+        dcat:identifier "MapData";
+        dcat:format "text/turtle"
+    ] ;
+    prof:isProfileOf [
+        a val:QualityConstraint;
+        dcat:identifier "ProcessedDataConstraint";
+        val:severeity "error" ;
+        prof:hasResource [
+            prof:hasArtifact <https://renedorsch.solidweb.org/validation_code/valid_temperature_shape.ttl> ;
+            dct:conformsTo <https://www.w3.org/ns/shacl> ;
+            dct:format "text/turtle" ;
+            spdx:checksum [
+                spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_md5> ;
+                spdx:checksumValue "eab69ef8a6b57cb117ef55f97553aca9"
+            ]
+        ]
+    ] .

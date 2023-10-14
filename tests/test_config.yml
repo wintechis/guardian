@@ -1,0 +1,12 @@
+knowledge_graph: "http://127.0.0.1:7200/repositories/test"
+knowledge_graph_vendor: "graphdb"
+created_by: "Python Guardian"
+created_uri: "http://exampel.org/me"
+description: "A Guardian that is able to use abritrary python code and frictionless schemas."
+conformance_standards: 
+  - conformance: "https://specs.frictionlessdata.io/data-package/"
+    formats:  ["application/json", "application/yaml"]
+  - conformance: "https://www.w3.org/ns/shacl"
+    formats: ["text/turtle"]
+  - conformance: "http://python.org"
+    formats: ["plain/text", "text/x-python"]

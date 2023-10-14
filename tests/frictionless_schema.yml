@@ -1,0 +1,16 @@
+name: sensor_values
+path: sensor_values.csv
+schema:
+  fields:
+    - name: MAC
+    type: string
+    format: default
+    pattern: "^[0-9a-f]{2}(:[0-9a-f]{2}){5}$"
+    - name: value
+    type: number
+    constraints:
+    required: true
+    - name: type
+    type: string
+    constraints:
+    enum: ["Temperature", "Pressure", "Humidity"]

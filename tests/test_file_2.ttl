@@ -1,0 +1,29 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix : <http://purl.org/graphguard/ontology#> .
+
+
+
+:QualityContract2 a :QualityContract ;
+dcat:identifier "MyQualityContract";
+    odrl:target [
+        a dcat:Dataset;
+        dcat:identifier "myComponent"
+    ] ;
+    prof:isProfileOf [
+        a :QualityConstraint;
+        dcat:identifier "MyQualityConstraint2";
+        :severeity "error" ;
+        prof:hasResource [
+            prof:hasArtifact <https://renedorsch.solidweb.org/validation_code/validation.py> ;
+            dct:conformsTo <http://python.org> ;
+            dct:format "text/x-python" ;
+            spdx:checksum [
+                spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_md5> ;
+                spdx:checksumValue "da0ba31805f0d95dbb483d511a05d406"
+            ]
+        ]
+    ] .

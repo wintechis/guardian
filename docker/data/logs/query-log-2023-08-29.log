@@ -1,0 +1,2480 @@
+[INFO ] 2023-08-29 09:16:51,859 [import-task-GuardianExample-1 | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2023-08-29 09:21:56,891 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:21:54Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:21:54Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:21:54Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:21:59,808 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:21:57Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:21:57Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:21:57Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "da0ba31805f0d95dbb483d511a05d406")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:22:05,078 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:22:03Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:22:03Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:22:03Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''<Schema Column(name=type, type=DataType(category))> failed element-wise validator 0:
+<Check isin: isin(['Temperature', 'Pressure', 'Humidity'])>
+failure cases:
+   index failure_case
+0      0      Nothing'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:22:07,797 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:22:05Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:22:05Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:22:05Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "da0ba31805f0d95dbb483d511a05d406")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:22:12,939 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:22:10Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:22:10Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:22:10Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''column 'type' not in dataframe
+                 MAC  value
+0  02:ab:1d:2f:12:12  123.0'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:22:15,653 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T11:22:13Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T11:22:13Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T11:22:13Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "myComponent".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "da0ba31805f0d95dbb483d511a05d406")
+        
+    } 
+    
+[INFO ] 2023-08-29 09:52:43,179 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: CLEAR DEFAULT
+[INFO ] 2023-08-29 09:52:48,449 [import-task-GuardianExample-1 | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2023-08-29 09:53:17,508 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: CLEAR DEFAULT
+[INFO ] 2023-08-29 09:53:30,735 [import-task-GuardianExample-1 | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2023-08-29 10:12:17,088 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T12:12:15Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T12:12:15Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T12:12:15Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''column 'MAC;value;type' not in DataFrameSchema {'MAC': <Schema Column(name=MAC, type=DataType(string[python]))>, 'value': <Schema Column(name=value, type=DataType(float64))>, 'type': <Schema Column(name=type, type=DataType(category))>}'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 10:12:53,134 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T12:12:51Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T12:12:51Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T12:12:51Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''<Schema Column(name=type, type=DataType(category))> failed element-wise validator 0:
+<Check isin: isin(['Temperature', 'Pressure', 'Humidity'])>
+failure cases:
+   index failure_case
+0      0  temperature
+1      1  temperature
+2      2  temperature
+3      3  temperature
+4      4  temperature'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 10:13:32,210 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T12:13:30Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T12:13:30Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T12:13:30Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:05:16,269 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:05:14Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:05:14Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:05:14Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:05:21,634 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:05:19Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:05:19Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:05:19Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:09:10,380 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:09:08Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:09:08Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:09:08Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''<Schema Column(name=type, type=DataType(category))> failed element-wise validator 0:
+<Check isin: isin(['Temperature', 'Pressure', 'Humidity'])>
+failure cases:
+   index failure_case
+0      0  temperature
+1      1  temperature
+2      2  temperature
+3      3  temperature
+4      4  temperature'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:09:43,596 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:09:41Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:09:41Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:09:41Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:09:48,789 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:09:46Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:09:46Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:09:46Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:10:33,822 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:10:31Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:10:31Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:10:31Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:10:39,116 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:10:37Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:10:37Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:10:37Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:11:21,882 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:11:19Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:11:19Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:11:19Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:11:39,397 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:11:37Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:11:37Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:11:37Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:11:44,674 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:11:42Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:11:42Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:11:42Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:12:58,072 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:12:55Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:12:55Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:12:55Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:13:03,217 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:13:01Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:13:01Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:13:01Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:27:14,268 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:27:12Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:27:12Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:27:12Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:27:19,565 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:27:17Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:27:17Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:27:17Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:27:35,230 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:27:33Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:27:33Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:27:33Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:27:40,597 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:27:38Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:27:38Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:27:38Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:28:39,617 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:28:37Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:28:37Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:28:37Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:28:44,813 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:28:42Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:28:42Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:28:42Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:29:51,086 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:29:48Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:29:48Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:29:48Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:29:56,576 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:29:54Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:29:54Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:29:54Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:32:31,406 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:32:29Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:32:29Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:32:29Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:32:36,701 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:32:34Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:32:34Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:32:34Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:33:03,870 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:33:01Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:33:01Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:33:01Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:33:09,047 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:33:06Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:33:06Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:33:06Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:34:31,147 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:34:29Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:34:29Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:34:29Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 11:34:36,472 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T13:34:34Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T13:34:34Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T13:34:34Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:28:26,932 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:28:24Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:28:24Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:28:24Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:28:31,790 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:28:29Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:28:29Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:28:29Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:29:57,761 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:29:55Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:29:55Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:29:55Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:30:02,480 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:30:00Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:30:00Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:30:00Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:30:24,298 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:30:22Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:30:22Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:30:22Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:30:29,047 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:30:26Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:30:26Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:30:26Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:31:02,936 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:31:00Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:31:00Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:31:00Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:31:07,692 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:31:05Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:31:05Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:31:05Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:32:22,839 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:32:20Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:32:20Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:32:20Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:32:27,775 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:32:25Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:32:25Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:32:25Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:33:42,813 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:33:40Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:33:40Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:33:40Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:33:47,610 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:33:45Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:33:45Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:33:45Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:34:28,693 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:34:26Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:34:26Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:34:26Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:34:33,434 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:34:31Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:34:31Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:34:31Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:46:44,392 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:46:42Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:46:42Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:46:42Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:46:49,192 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:46:47Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:46:47Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:46:47Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:48:42,949 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:48:40Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:48:40Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:48:40Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:48:47,797 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:48:45Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:48:45Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:48:45Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:49:04,023 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:49:01Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:49:01Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:49:01Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:49:08,801 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:49:06Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:49:06Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:49:06Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:50:53,381 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:50:51Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:50:51Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:50:51Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:50:58,173 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:50:56Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:50:56Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:50:56Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:52:13,977 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:52:11Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:52:11Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:52:11Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:52:18,839 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:52:16Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:52:16Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:52:16Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:54:39,069 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:54:37Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:54:36Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:54:37Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:54:44,057 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:54:42Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:54:42Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:54:42Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:55:53,844 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:55:51Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:55:51Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:55:51Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:55:58,679 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:55:56Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:55:56Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:55:56Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:57:46,676 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:57:44Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:57:44Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:57:44Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 12:57:51,550 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T14:57:49Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T14:57:49Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T14:57:49Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''None'''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 13:03:30,250 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T15:03:28Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T15:03:28Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T15:03:28Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 13:03:35,230 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T15:03:33Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T15:03:33Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T15:03:33Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 13:06:03,919 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T15:06:01Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T15:06:01Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T15:06:01Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-29 13:06:08,840 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX : <http://example.contract.org#>
+    INSERT  {
+        [] a :QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-29T15:06:06Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a :QualityValidation;
+                prov:startedAtTime "2023-08-29T15:06:06Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-29T15:06:06Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://exampel.org/me>
+            ];
+            :report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a :QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    
+[INFO ] 2023-08-29 13:18:17,810 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: PREFIX contract: <http://example.contract.org#> 
+PREFIX : <http://example.contract.org#>
+PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+DELETE {
+  	?s a contract:QualityReport ;
+    	dqv:result ?result;
+     prov:generatedAtTime ?time.  
+    ?s ?p ?o.
+} where { 
+	?s a contract:QualityReport ;
+    	dqv:result ?result;
+     prov:generatedAtTime ?time.
+    ?s ?p ?o.
+    
+    FILTER(?time < "2023-08-29T14:57:44Z"^^xsd:dateTime)
+}
+
+[INFO ] 2023-08-29 13:19:30,635 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: PREFIX contract: <http://example.contract.org#> 
+PREFIX : <http://example.contract.org#>
+PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+DELETE {
+  	?s a contract:QualityReport ;
+    	dqv:result ?result;
+     prov:generatedAtTime ?time.  
+    ?s ?p ?o.
+} where { 
+	?s a contract:QualityReport ;
+    	dqv:result ?result;
+     prov:generatedAtTime ?time.
+    ?s ?p ?o.
+    
+FILTER(?time >= "2023-08-29T15:03:28Z"^^xsd:dateTime)
+}
+

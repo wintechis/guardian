@@ -1,0 +1,72 @@
+[INFO ] 2023-08-31 14:34:40,996 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: CLEAR DEFAULT
+[INFO ] 2023-08-31 14:34:57,048 [import-task-GuardianExample-1 | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2023-08-31 14:35:21,154 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX val: <http://purl.org/graphguard/ontology#>
+    INSERT  {
+        [] a val:QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "true"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-31T16:35:21Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a val:QualityValidation;
+                prov:startedAtTime "2023-08-31T16:35:21Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-31T16:35:21Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://www.purl.org/graphguard/guardian/me>
+            ];
+            val:report '''Validation was successful. No validation errors detected. '''
+            
+    } WHERE {
+        ?qualityContract a val:QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "LoadData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "54ed4c727f8ebaeab69ef8a6b57cb15a6d1fa26c20b0d80902f7357da4c797fd")
+        
+    } 
+    
+[INFO ] 2023-08-31 14:35:22,433 [repositories/GuardianExample | c.o.t.m.MonitorRepositoryConnection] Incoming update: 
+    PREFIX dqv:  <http://www.w3.org/ns/dqv#> 
+    PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+    PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    PREFIX dct: <http://purl.org/dc/terms/>
+    PREFIX spdx: <http://spdx.org/rdf/terms#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+    PREFIX prov: <http://www.w3.org/ns/prov#>
+    PREFIX val: <http://purl.org/graphguard/ontology#>
+    INSERT  {
+        [] a val:QualityReport;
+            dqv:computedOn ?dataset;
+            dqv:result "false"^^xsd:boolean;
+            prov:generatedAtTime "2023-08-31T16:35:22Z"^^xsd:dateTime;
+            prov:generatedBy [
+                a val:QualityValidation;
+                prov:startedAtTime "2023-08-31T16:35:22Z"^^xsd:dateTime;
+                prov:endedAtTime "2023-08-31T16:35:22Z"^^xsd:dateTime;
+                prov:used ?resource, ?dataset;
+                prov:wasAssociatedWith <http://www.purl.org/graphguard/guardian/me>
+            ];
+            val:report '''None'''
+            
+    } WHERE {
+        ?qualityContract a val:QualityContract;
+            odrl:target ?dataset.
+        ?dataset dcat:identifier "ProcessData".
+        ?qualityContract prof:isProfileOf [ prof:hasResource ?resource ].
+        ?resource spdx:checksum [ spdx:checksumValue ?checksum ].
+                    
+        FILTER (?checksum = "fda5c517ef55f972d553aca951caf506")
+        
+    } 
+    

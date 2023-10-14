@@ -1,0 +1,14 @@
+.pytest_cache/**/**
+.vscode/**/**
+guardian/.pytest_cache/**/**
+guardian/__pycache__/**/**
+guardian/test_validation_function.py
+guardian/test.py
+tests/__pycache__/**
+tests/__pycache**/**
+tests/__pycache__/test.*
+tests/__pycache__/test_guardian_config.cpython-39-pytest-7.4.0.pyc
+tests/__pycache__/test_guardian.cpython-39-pytest-7.4.0.pyc
+tests/__pycache__/test_guardian_utils.cpython-39-pytest-7.4.0.pyc
+tests/__pycache__/test_query.cpython-39-pytest-7.4.0.pyc
+tests/__pycache__/test_quality_constrain.cpython-39-pytest-7.4.0.pyc

@@ -1,0 +1,713 @@
+[INFO ] 2023-08-29 09:15:58,024 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-10.3.1.jar!/com/ontotext/graphdb/logback.xml' as logback's configuration file
+[INFO ] 2023-08-29 09:15:58,352 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2023-08-29 09:16:07,836 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2023-08-29 09:16:07,839 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2023-08-29 09:16:07,845 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2023-08-29 09:16:07,849 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2023-08-29 09:16:07,853 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2023-08-29 09:16:09,435 [main | c.o.g.r.s.SecurityUtil] Cluster gRPC server security is disabled
+[INFO ] 2023-08-29 09:16:09,883 [main | c.o.f.c.s.r.GraphDBRpcServer] Started gRPC server on port 7300 successfully
+[INFO ] 2023-08-29 09:16:13,538 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2023-08-29 09:16:42,108 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Version: 10.3, revision: 1391024482
+[INFO ] 2023-08-29 09:16:42,110 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Build date: Thu Aug 10 12:53:17 GMT 2023
+[INFO ] 2023-08-29 09:16:42,123 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Started repository GuardianExample in READ/WRITE mode.
+[INFO ] 2023-08-29 09:16:42,131 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'partialRDFS' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,133 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'transaction-isolation' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,134 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'checkForValidPropertiesAndClasses' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,135 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'transaction-mode' to default value 'safe'
+[INFO ] 2023-08-29 09:16:42,137 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'entity-pool-implementation' to default value 'transactional'
+[INFO ] 2023-08-29 09:16:42,140 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'useShutdownHooks' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,148 [repository-manager-0 | c.o.GraphDBConfigParameters] Cache pages for tuples: 7829
+[INFO ] 2023-08-29 09:16:42,149 [repository-manager-0 | c.o.GraphDBConfigParameters] Cache pages for predicates: 1118
+[INFO ] 2023-08-29 09:16:42,152 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.global.page.cache' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,164 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Storage folder does not exist and is created: /opt/graphdb/home/data/repositories/GuardianExample/storage
+[INFO ] 2023-08-29 09:16:42,214 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.epool.onheap' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,215 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.page.cache.size' to default value '473.0M'
+[INFO ] 2023-08-29 09:16:42,217 [repository-manager-0 | c.o.t.MemoryConfig] Configured global page cache size to 473.0M
+[INFO ] 2023-08-29 09:16:42,220 [repository-manager-0 | c.o.t.e.EntityPoolFactory] Using entity pool implementation: transactional-disk
+[INFO ] 2023-08-29 09:16:42,227 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'epool.connection.cache.size' to default value '2000'
+[INFO ] 2023-08-29 09:16:42,234 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.epool.onheap' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,344 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'enable-pool-reversecache' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,583 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'allow-system-entities-as-data' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,589 [repository-manager-0 | c.o.t.u.l.LimitedObjectCacheFactory] Using LRU cache type: synch
+[INFO ] 2023-08-29 09:16:42,595 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'cache-ratio-so-os-cso-cos' to default value '[50, 50, 50]'
+[INFO ] 2023-08-29 09:16:42,625 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.global.page.cache' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,630 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.page.cache.size' to default value '473.0M'
+[INFO ] 2023-08-29 09:16:42,851 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'virtual.repository.mode' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,931 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'enable-debug-rules' to default value 'false'
+[INFO ] 2023-08-29 09:16:42,944 [repository-manager-0 | c.o.t.InferencerFactory] ruleSet=rdfsplus-optimized, partialRdfs=false
+[INFO ] 2023-08-29 09:16:42,952 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'filter.obj.only.hint' to default value 'true'
+[INFO ] 2023-08-29 09:16:42,995 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'epool.journal.buffer.size' to default value '1024'
+[INFO ] 2023-08-29 09:16:43,100 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'check.pred.stats' to default value 'false'
+[INFO ] 2023-08-29 09:16:43,210 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'disable-plugins' to default value '[]'
+[INFO ] 2023-08-29 09:16:43,211 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'skip-default-plugins' to default value 'false'
+[INFO ] 2023-08-29 09:16:43,212 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Searching for plugins available in the classpath...
+[INFO ] 2023-08-29 09:16:43,229 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin direct
+[INFO ] 2023-08-29 09:16:43,231 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin notifications
+[INFO ] 2023-08-29 09:16:43,232 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin expose-entity
+[INFO ] 2023-08-29 09:16:43,232 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin literals-index
+[INFO ] 2023-08-29 09:16:43,233 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin script
+[INFO ] 2023-08-29 09:16:43,235 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin utils
+[INFO ] 2023-08-29 09:16:43,237 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin plugincontrol
+[INFO ] 2023-08-29 09:16:43,237 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin magic-predicates
+[INFO ] 2023-08-29 09:16:43,238 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin sparql-template
+[INFO ] 2023-08-29 09:16:43,239 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'register-plugins' to default value '[]'
+[INFO ] 2023-08-29 09:16:43,244 [repository-manager-0 | c.o.GraphDBConfigParameters] Reading external plugins from /opt/graphdb/dist/lib/plugins
+[INFO ] 2023-08-29 09:16:43,245 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'register-external-plugins' to default value '[/opt/graphdb/dist/lib/plugins]'
+[INFO ] 2023-08-29 09:16:43,246 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Registering external plugins...
+[INFO ] 2023-08-29 09:16:43,247 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/history-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,257 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin history
+[INFO ] 2023-08-29 09:16:43,259 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/geosparql-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,289 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin GeoSPARQL
+[INFO ] 2023-08-29 09:16:43,293 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/sequences-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,297 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin sequences
+[INFO ] 2023-08-29 09:16:43,297 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/entity-change-connector for plugins
+[INFO ] 2023-08-29 09:16:43,321 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin entity-change
+[INFO ] 2023-08-29 09:16:43,323 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/solr-connector for plugins
+[INFO ] 2023-08-29 09:16:43,363 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin solr-connector
+[INFO ] 2023-08-29 09:16:43,364 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/notifications-logger-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,366 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin notifications-logger
+[INFO ] 2023-08-29 09:16:43,367 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/tx-rollback-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,374 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin tx-rollback
+[INFO ] 2023-08-29 09:16:43,375 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/geospatial-plugin for plugins
+[WARN ] 2023-08-29 09:16:43,432 [repository-manager-0 | o.e.r.q.a.e.f.FunctionRegistry] New service class com.ontotext.trree.query.functions.afn.old.Localname replaces existing service class org.eclipse.rdf4j.spin.function.Localname
+[INFO ] 2023-08-29 09:16:43,444 [repository-manager-0 | c.o.t.p.g.FunctionLoader] Registered 1 functions from package com.ontotext.trree.plugin.geo.
+[INFO ] 2023-08-29 09:16:43,445 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin geospatial
+[INFO ] 2023-08-29 09:16:43,446 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/rdfrank-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,453 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin rdfrank
+[INFO ] 2023-08-29 09:16:43,454 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/similarity-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,477 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin similarity
+[INFO ] 2023-08-29 09:16:43,478 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/change-tracking-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,481 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin change-tracking
+[INFO ] 2023-08-29 09:16:43,482 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/lucene-connector for plugins
+[INFO ] 2023-08-29 09:16:43,514 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin lucene-connector
+[INFO ] 2023-08-29 09:16:43,515 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/dependencies-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,526 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin dependencies-plugin
+[INFO ] 2023-08-29 09:16:43,527 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/opensearch-connector for plugins
+[INFO ] 2023-08-29 09:16:43,595 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin opensearch-connector
+[INFO ] 2023-08-29 09:16:43,596 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/text-mining-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,601 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin text-mining
+[INFO ] 2023-08-29 09:16:43,602 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/autocomplete-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,610 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin autocomplete
+[INFO ] 2023-08-29 09:16:43,611 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/elasticsearch-connector for plugins
+[INFO ] 2023-08-29 09:16:43,639 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin elasticsearch-connector
+[INFO ] 2023-08-29 09:16:43,644 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/kafka-connector for plugins
+[INFO ] 2023-08-29 09:16:43,682 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin kafka-connector
+[INFO ] 2023-08-29 09:16:43,683 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/mongodb-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,699 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin mongodb
+[INFO ] 2023-08-29 09:16:43,700 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/proof-plugin for plugins
+[INFO ] 2023-08-29 09:16:43,709 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin proof
+[INFO ] 2023-08-29 09:16:43,710 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Scanning /opt/graphdb/dist/lib/plugins/sparql-mm for plugins
+[INFO ] 2023-08-29 09:16:43,713 [repository-manager-0 | c.o.t.s.i.PluginManager] Registering plugin sparql-mm
+[INFO ] 2023-08-29 09:16:43,717 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugins... (DEFAULT)
+[INFO ] 2023-08-29 09:16:43,765 [repository-manager-0 | c.o.l.LicenseRegistry] License configuration: Embedded license
+[INFO ] 2023-08-29 09:16:43,766 [repository-manager-0 | c.o.l.LicenseRegistry] License file: jar:file:/opt/graphdb/dist/lib/graphdb-runtime-10.3.1.jar!/GRAPHDB_LITE.license
+[INFO ] 2023-08-29 09:16:43,772 [repository-manager-0 | c.o.l.LicenseRegistry] Product:                 GRAPHDB_LITE
+[INFO ] 2023-08-29 09:16:43,778 [repository-manager-0 | c.o.l.LicenseRegistry] Capabilities:            [LUCENE_CONNECTOR]
+[INFO ] 2023-08-29 09:16:43,779 [repository-manager-0 | c.o.l.LicenseRegistry] Usage restriction:       null
+[INFO ] 2023-08-29 09:16:43,780 [repository-manager-0 | c.o.l.LicenseRegistry] Licensee:                Freeware
+[INFO ] 2023-08-29 09:16:43,780 [repository-manager-0 | c.o.l.LicenseRegistry] Permitted use:           THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[INFO ] 2023-08-29 09:16:43,781 [repository-manager-0 | c.o.l.LicenseRegistry] Version:                 10.3
+[INFO ] 2023-08-29 09:16:43,782 [repository-manager-0 | c.o.l.LicenseRegistry] Expiry date:             none
+[INFO ] 2023-08-29 09:16:43,782 [repository-manager-0 | c.o.l.LicenseRegistry] Latest publication date: none
+[INFO ] 2023-08-29 09:16:43,783 [repository-manager-0 | c.o.l.LicenseRegistry] Max CPU cores:           1
+[INFO ] 2023-08-29 09:16:43,788 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'nonInterpretablePredicates' to default value 'null'
+[INFO ] 2023-08-29 09:16:43,809 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'GeoSPARQL'
+[INFO ] 2023-08-29 09:16:44,981 [repository-manager-0 | c.o.t.g.FunctionLoader] Registered 50 functions from package com.useekm.geosparql.
+[INFO ] 2023-08-29 09:16:44,984 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'autocomplete'
+[INFO ] 2023-08-29 09:16:44,993 [repository-manager-0 | c.o.t.p.a.AutocompletePluginUtils] >>>>>>>> AutocompletePlugin: No configuration file found at /opt/graphdb/home/data/repositories/GuardianExample/storage/autocomplete/v2/config.properties. Assuming default options for plugin.
+[INFO ] 2023-08-29 09:16:45,003 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'change-tracking'
+[INFO ] 2023-08-29 09:16:45,031 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'dependencies-plugin'
+[INFO ] 2023-08-29 09:16:45,033 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'direct'
+[INFO ] 2023-08-29 09:16:45,036 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'elasticsearch-connector'
+[INFO ] 2023-08-29 09:16:45,067 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'entity-change'
+[INFO ] 2023-08-29 09:16:45,094 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'expose-entity'
+[INFO ] 2023-08-29 09:16:45,098 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'geospatial'
+[INFO ] 2023-08-29 09:16:45,100 [repository-manager-0 | c.o.t.p.g.GeoSpatialPlugin] Plugin:geospatial initialized
+[INFO ] 2023-08-29 09:16:45,101 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'history'
+[INFO ] 2023-08-29 09:16:45,161 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'kafka-connector'
+[INFO ] 2023-08-29 09:16:45,179 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'literals-index'
+[INFO ] 2023-08-29 09:16:45,186 [repository-manager-0 | c.o.p.literals-index] Full-text search functionality is disabled
+[WARN ] 2023-08-29 09:16:45,251 [repository-manager-0 | c.o.p.literals-index] Rebuilding literals indexes. Starting from id: 1
+[WARN ] 2023-08-29 09:16:45,360 [repository-manager-0 | c.o.p.literals-index] Complete in 0.103, num entries indexed:0
+[INFO ] 2023-08-29 09:16:45,361 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'lucene-connector'
+[INFO ] 2023-08-29 09:16:45,378 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'magic-predicates'
+[INFO ] 2023-08-29 09:16:45,379 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'mongodb'
+[INFO ] 2023-08-29 09:16:45,380 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'notifications'
+[INFO ] 2023-08-29 09:16:45,382 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'notifications-logger'
+[INFO ] 2023-08-29 09:16:45,383 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'opensearch-connector'
+[INFO ] 2023-08-29 09:16:45,405 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'plugincontrol'
+[INFO ] 2023-08-29 09:16:45,408 [repository-manager-0 | c.o.t.p.p.PluginControlPlugin] Plugin:plugincontrol initialized
+[INFO ] 2023-08-29 09:16:45,411 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'proof'
+[INFO ] 2023-08-29 09:16:45,412 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'rdfrank'
+[INFO ] 2023-08-29 09:16:45,434 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'script'
+[INFO ] 2023-08-29 09:16:45,438 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'sequences'
+[INFO ] 2023-08-29 09:16:45,441 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'similarity'
+[INFO ] 2023-08-29 09:16:46,286 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'solr-connector'
+[INFO ] 2023-08-29 09:16:46,357 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'sparql-mm'
+[INFO ] 2023-08-29 09:16:46,424 [repository-manager-0 | c.o.g.s.FunctionLoader] Registered 58 functions from package com.github.tkurz.sparqlmm.function.
+[INFO ] 2023-08-29 09:16:46,433 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'sparql-template'
+[INFO ] 2023-08-29 09:16:46,443 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'text-mining'
+[INFO ] 2023-08-29 09:16:46,452 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'tx-rollback'
+[INFO ] 2023-08-29 09:16:46,461 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugin 'utils'
+[INFO ] 2023-08-29 09:16:47,203 [repository-manager-0 | c.o.t.s.i.PluginManager] Finished initializing plugins
+[INFO ] 2023-08-29 09:16:47,210 [repository-manager-0 | c.o.t.MemoryConfig] Configured global page cache size to 473.0M
+[INFO ] 2023-08-29 09:16:47,212 [repository-manager-0 | c.o.t.MemoryConfig] Configured global page cache size to 473.0M
+[INFO ] 2023-08-29 09:16:48,062 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'do.resolve.entities' to default value 'true'
+[INFO ] 2023-08-29 09:16:48,063 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'do.load.data' to default value 'true'
+[INFO ] 2023-08-29 09:16:48,064 [repository-manager-0 | c.o.r.p.ParallelLoader] Data will be parsed + resolved + loaded.
+[INFO ] 2023-08-29 09:16:48,065 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'graphdb.persistent.parallel.inferencers' to default value 'false'
+[INFO ] 2023-08-29 09:16:48,101 [repository-manager-0 | c.o.r.p.ParallelLoader] Using 1 threads for inference
+[INFO ] 2023-08-29 09:16:49,017 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:16:49,017 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:16:49,069 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'custom.validation.queries.file' to default value 'null'
+[INFO ] 2023-08-29 09:16:49,222 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:16:49,223 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:16:51,886 [import-task-GuardianExample-1 | c.o.t.i.FileSystemHealth] Active locations health:
+[INFO ] 2023-08-29 09:16:51,899 [import-task-GuardianExample-1 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/logs: 22.0% (OK)
+[INFO ] 2023-08-29 09:16:51,914 [import-task-GuardianExample-1 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/work: 22.0% (OK)
+[INFO ] 2023-08-29 09:16:51,922 [import-task-GuardianExample-1 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/data/repositories/GuardianExample: 22.0% (OK)
+[INFO ] 2023-08-29 09:16:58,287 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:16:58,293 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:21:49,751 [repositories/testenvironment | c.o.f.s.GraphDBProtocolExceptionResolver] Client sent bad request (404)
+org.eclipse.rdf4j.http.server.ClientHTTPException: Unknown repository: testenvironment
+	at org.eclipse.rdf4j.http.server.repository.RepositoryInterceptor.setRequestAttributes(RepositoryInterceptor.java:110)
+	at org.eclipse.rdf4j.http.server.ServerInterceptor.preHandle(ServerInterceptor.java:35)
+	at org.eclipse.rdf4j.http.server.repository.RepositoryInterceptor.preHandle(RepositoryInterceptor.java:85)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor.preHandle(ForestRepositoryInterceptor.java:34)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor$$FastClassBySpringCGLIB$$d99bcd9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:137)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor$$EnhancerBySpringCGLIB$$d5724634.preHandle(<generated>)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.security.AdminDelegatingFilterProxy.doFilter(AdminDelegatingFilterProxy.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.clusterproxy.ClusterFilterBean.doFilter(ClusterFilterBean.java:73)
+	at com.ontotext.forest.clusterproxy.ClusterLoadBalancerFilter.doFilterInternal(ClusterLoadBalancerFilter.java:25)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.core.request.RequestFilter.doFilterInternal(RequestFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO ] 2023-08-29 09:21:51,803 [repositories/testenvironment | c.o.f.s.GraphDBProtocolExceptionResolver] Client sent bad request (404)
+org.eclipse.rdf4j.http.server.ClientHTTPException: Unknown repository: testenvironment
+	at org.eclipse.rdf4j.http.server.repository.RepositoryInterceptor.setRequestAttributes(RepositoryInterceptor.java:110)
+	at org.eclipse.rdf4j.http.server.ServerInterceptor.preHandle(ServerInterceptor.java:35)
+	at org.eclipse.rdf4j.http.server.repository.RepositoryInterceptor.preHandle(RepositoryInterceptor.java:85)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor.preHandle(ForestRepositoryInterceptor.java:34)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor$$FastClassBySpringCGLIB$$d99bcd9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:137)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.ontotext.forest.sesame.ForestRepositoryInterceptor$$EnhancerBySpringCGLIB$$d5724634.preHandle(<generated>)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.security.AdminDelegatingFilterProxy.doFilter(AdminDelegatingFilterProxy.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.clusterproxy.ClusterFilterBean.doFilter(ClusterFilterBean.java:73)
+	at com.ontotext.forest.clusterproxy.ClusterLoadBalancerFilter.doFilterInternal(ClusterLoadBalancerFilter.java:25)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.core.request.RequestFilter.doFilterInternal(RequestFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO ] 2023-08-29 09:21:53,856 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 164058230
+[INFO ] 2023-08-29 09:21:53,956 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'deduplicate.construct' to default value 'true'
+[WARN ] 2023-08-29 09:21:53,984 [repositories/GuardianExample | o.e.r.q.a.e.f.TupleFunctionRegistry] New service class com.ontotext.trree.query.functions.apf.old.StrSplitOld replaces existing service class org.eclipse.rdf4j.spin.function.apf.StrSplit
+[WARN ] 2023-08-29 09:21:53,986 [repositories/GuardianExample | o.e.r.q.a.e.f.TupleFunctionRegistry] New service class com.ontotext.trree.query.functions.apf.old.ConcatOld replaces existing service class org.eclipse.rdf4j.spin.function.apf.ConcatTupleFunction
+[WARN ] 2023-08-29 09:21:53,988 [repositories/GuardianExample | o.e.r.q.a.e.f.TupleFunctionRegistry] New service class com.ontotext.trree.query.functions.list.old.IndexOld replaces existing service class org.eclipse.rdf4j.spin.function.list.Index
+[WARN ] 2023-08-29 09:21:53,989 [repositories/GuardianExample | o.e.r.q.a.e.f.TupleFunctionRegistry] New service class com.ontotext.trree.query.functions.list.old.LengthOld replaces existing service class org.eclipse.rdf4j.spin.function.list.Length
+[WARN ] 2023-08-29 09:21:53,990 [repositories/GuardianExample | o.e.r.q.a.e.f.TupleFunctionRegistry] New service class com.ontotext.trree.query.functions.list.old.MemberOld replaces existing service class org.eclipse.rdf4j.spin.function.list.Member
+[INFO ] 2023-08-29 09:21:54,019 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'reuse.vars.in.subselects' to default value 'true'
+[INFO ] 2023-08-29 09:21:54,043 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'in-clause-max-members' to default value '16'
+[INFO ] 2023-08-29 09:21:54,044 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'query.convert.values.clause' to default value 'true'
+[INFO ] 2023-08-29 09:21:54,070 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'hash.join' to default value 'false'
+[INFO ] 2023-08-29 09:21:54,072 [repositories/GuardianExample | c.o.c.AbstractParameter] Configured parameter 'merge.join' to default value 'false'
+[INFO ] 2023-08-29 09:21:54,115 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 164058230 is finished
+[INFO ] 2023-08-29 09:21:56,852 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:21:59,788 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:22:02,587 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 164058230
+[INFO ] 2023-08-29 09:22:02,603 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 164058230 is finished
+[INFO ] 2023-08-29 09:22:05,060 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:22:07,776 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:22:10,477 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 164058230
+[INFO ] 2023-08-29 09:22:10,502 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 164058230 is finished
+[INFO ] 2023-08-29 09:22:12,922 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:22:15,635 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:52:33,841 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:52:33,841 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:52:33,845 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:52:33,845 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:52:35,859 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:52:40,798 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:52:43,150 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:52:43,961 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:52:54,554 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:52:54,557 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:53:02,428 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1694510347
+[INFO ] 2023-08-29 09:53:02,445 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1694510347 is finished
+[INFO ] 2023-08-29 09:53:14,843 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:53:17,487 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 09:53:18,206 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:53:35,507 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 09:53:35,510 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 09:53:36,810 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1694510347
+[INFO ] 2023-08-29 09:53:36,837 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1694510347 is finished
+[INFO ] 2023-08-29 09:54:03,357 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -2100317723
+[INFO ] 2023-08-29 09:54:03,380 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -2100317723 is finished
+[INFO ] 2023-08-29 10:12:14,473 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 10:12:14,494 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 10:12:17,073 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 10:12:50,666 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 10:12:50,676 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 10:12:53,114 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 10:13:29,770 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 10:13:29,785 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 10:13:32,193 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 10:14:01,675 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 547011142
+[INFO ] 2023-08-29 10:14:01,679 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 547011142 is finished
+[INFO ] 2023-08-29 10:14:36,550 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1266781291
+[INFO ] 2023-08-29 10:14:36,553 [repositories/GuardianExample | c.o.f.s.GraphDBProtocolExceptionResolver] Client sent bad request (400)
+org.eclipse.rdf4j.http.server.ClientHTTPException: MALFORMED QUERY: org.eclipse.rdf4j.query.parser.sparql.ast.VisitorException: QName 'dqv:result' uses an undefined prefix
+	at org.eclipse.rdf4j.http.server.repository.handler.DefaultQueryRequestHandler.getQuery(DefaultQueryRequestHandler.java:185)
+	at com.ontotext.graphdb.sesame.handler.GraphDBQueryResultHandler.getQuery(GraphDBQueryResultHandler.java:73)
+	at org.eclipse.rdf4j.http.server.repository.handler.AbstractQueryRequestHandler.handleQueryRequest(AbstractQueryRequestHandler.java:70)
+	at org.eclipse.rdf4j.http.server.repository.AbstractRepositoryController.handleRequestInternal(AbstractRepositoryController.java:53)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.security.AdminDelegatingFilterProxy.doFilter(AdminDelegatingFilterProxy.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.clusterproxy.ClusterFilterBean.doFilter(ClusterFilterBean.java:73)
+	at com.ontotext.forest.clusterproxy.ClusterLoadBalancerFilter.doFilterInternal(ClusterLoadBalancerFilter.java:25)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.core.request.RequestFilter.doFilterInternal(RequestFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO ] 2023-08-29 10:14:46,988 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 24170374
+[INFO ] 2023-08-29 10:14:47,003 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 24170374 is finished
+[INFO ] 2023-08-29 11:05:13,537 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:05:13,575 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:05:16,248 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:05:19,296 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:05:19,313 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:05:21,615 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:08:08,506 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 11:08:08,506 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 11:08:08,509 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 11:08:08,510 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 11:08:10,472 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 11:08:10,475 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 11:08:12,883 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 24170374
+[INFO ] 2023-08-29 11:08:12,895 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 24170374 is finished
+[INFO ] 2023-08-29 11:08:21,900 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 11:08:21,917 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 11:08:42,140 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:08:42,164 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:08:49,295 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 11:08:49,447 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 11:09:07,757 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:09:07,776 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:09:10,341 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:09:16,866 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 11:09:16,942 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 11:09:41,051 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:09:41,064 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:09:43,569 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:09:46,483 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:09:46,502 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:09:48,768 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:09:55,859 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 11:09:55,930 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 11:10:31,214 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:10:31,254 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:10:33,798 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:10:36,796 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:10:36,818 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:10:39,095 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:10:44,613 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 11:10:44,681 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 11:11:19,328 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:11:19,344 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:11:21,860 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:11:36,943 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:11:36,975 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:11:39,379 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:11:42,384 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:11:42,417 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:11:44,652 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:12:55,585 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:12:55,615 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:12:58,043 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:13:00,971 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:13:00,995 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:13:03,197 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:27:11,812 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:27:11,842 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:27:14,239 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:27:17,217 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:27:17,241 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:27:19,531 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:27:32,807 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:27:32,825 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:27:35,210 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:27:38,299 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:27:38,319 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:27:40,571 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:28:37,109 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:28:37,131 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:28:39,593 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:28:42,521 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:28:42,540 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:28:44,789 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:29:48,586 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:29:48,609 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:29:51,049 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:29:54,197 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:29:54,247 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:29:56,529 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:32:28,930 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:32:28,960 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:32:31,385 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:32:34,401 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:32:34,417 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:32:36,671 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:33:01,416 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:33:01,429 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:33:03,842 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:33:06,781 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:33:06,799 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:33:09,028 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:34:28,678 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 11:34:28,699 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 11:34:31,128 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 11:34:34,183 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 11:34:34,203 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 11:34:36,452 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:28:24,345 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:28:24,365 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:28:26,918 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:28:29,504 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:28:29,515 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:28:31,778 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:29:14,846 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:29:14,855 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:29:35,573 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 12:29:35,577 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 12:29:35,797 [repositories/GuardianExample | o.e.r.h.s.r.n.NamespacesController] GET namespace list
+[INFO ] 2023-08-29 12:29:35,800 [repositories/GuardianExample | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2023-08-29 12:29:43,929 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:29:43,938 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:29:55,422 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:29:55,433 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:29:57,749 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:30:00,209 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:30:00,221 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:30:02,467 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:30:21,953 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:30:21,963 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:30:24,284 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:30:26,783 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:30:26,791 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:30:29,031 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:31:00,531 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:31:00,545 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:31:02,918 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:31:05,465 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:31:05,472 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:31:07,679 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:32:20,493 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:32:20,506 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:32:22,828 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:32:25,313 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:32:25,323 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:32:27,755 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:33:02,744 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:33:02,754 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:33:40,468 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:33:40,482 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:33:42,803 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:33:45,306 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:33:45,313 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:33:47,597 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:34:26,302 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:34:26,312 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:34:28,677 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:34:31,200 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:34:31,209 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:34:33,421 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:36:07,711 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 12:36:07,775 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 12:38:26,097 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 12:38:26,150 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 12:46:41,862 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:46:41,876 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:46:44,371 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:46:46,942 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:46:46,951 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:46:49,181 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:48:40,574 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:48:40,592 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:48:42,935 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:48:45,503 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:48:45,516 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:48:47,786 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:49:01,616 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:49:01,626 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:49:04,012 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:49:06,532 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:49:06,540 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:49:08,788 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:50:50,903 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:50:50,918 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:50:53,370 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:50:55,919 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:50:55,928 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:50:58,162 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:52:11,458 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:52:11,479 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:52:13,965 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:52:16,598 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:52:16,609 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:52:18,818 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:54:36,528 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:54:36,541 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:54:39,059 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:54:41,716 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:54:41,733 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:54:44,047 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:55:51,363 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:55:51,377 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:55:53,830 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:55:56,428 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:55:56,439 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:55:58,662 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:57:44,197 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 12:57:44,213 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 12:57:46,666 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 12:57:49,266 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 12:57:49,273 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 12:57:51,534 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:03:27,760 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 13:03:27,779 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 13:03:30,233 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:03:32,936 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 13:03:32,950 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 13:03:35,214 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:06:01,372 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query 1763717841
+[INFO ] 2023-08-29 13:06:01,388 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1763717841 is finished
+[INFO ] 2023-08-29 13:06:03,906 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:06:06,577 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] GET query -262497906
+[INFO ] 2023-08-29 13:06:06,587 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -262497906 is finished
+[INFO ] 2023-08-29 13:06:08,823 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:16:21,863 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1618183177
+[INFO ] 2023-08-29 13:16:21,935 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1618183177 is finished
+[INFO ] 2023-08-29 13:17:10,681 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1229851231
+[INFO ] 2023-08-29 13:17:10,764 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1229851231 is finished
+[INFO ] 2023-08-29 13:18:17,786 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:18:36,666 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -618830479
+[INFO ] 2023-08-29 13:18:36,678 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -618830479 is finished
+[INFO ] 2023-08-29 13:18:40,348 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1610289324
+[INFO ] 2023-08-29 13:18:40,360 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1610289324 is finished
+[INFO ] 2023-08-29 13:19:05,769 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -2058491527
+[INFO ] 2023-08-29 13:19:05,778 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -2058491527 is finished
+[INFO ] 2023-08-29 13:19:14,266 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -614593142
+[INFO ] 2023-08-29 13:19:14,276 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -614593142 is finished
+[INFO ] 2023-08-29 13:19:22,464 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1880042076
+[INFO ] 2023-08-29 13:19:22,484 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1880042076 is finished
+[INFO ] 2023-08-29 13:19:30,616 [repositories/GuardianExample | c.o.g.s.StatementsController] POST SPARQL update request to repository
+[INFO ] 2023-08-29 13:19:41,295 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1584697808
+[INFO ] 2023-08-29 13:19:41,308 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1584697808 is finished
+[INFO ] 2023-08-29 13:20:05,876 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 686940968
+[INFO ] 2023-08-29 13:20:05,889 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 686940968 is finished
+[INFO ] 2023-08-29 13:20:33,895 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1170968305
+[INFO ] 2023-08-29 13:20:33,910 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query 1170968305 is finished
+[INFO ] 2023-08-29 13:20:45,279 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query 23181201
+[INFO ] 2023-08-29 13:20:45,286 [repositories/GuardianExample | c.o.f.s.GraphDBProtocolExceptionResolver] Client sent bad request (400)
+org.eclipse.rdf4j.http.server.ClientHTTPException: MALFORMED QUERY: Encountered " "}" "} "" at line 15, column 1.
+Was expecting one of:
+    "]" ...
+    ";" ...
+    "," ...
+    
+	at org.eclipse.rdf4j.http.server.repository.handler.DefaultQueryRequestHandler.getQuery(DefaultQueryRequestHandler.java:185)
+	at com.ontotext.graphdb.sesame.handler.GraphDBQueryResultHandler.getQuery(GraphDBQueryResultHandler.java:73)
+	at org.eclipse.rdf4j.http.server.repository.handler.AbstractQueryRequestHandler.handleQueryRequest(AbstractQueryRequestHandler.java:70)
+	at org.eclipse.rdf4j.http.server.repository.AbstractRepositoryController.handleRequestInternal(AbstractRepositoryController.java:53)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:177)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.security.AdminDelegatingFilterProxy.doFilter(AdminDelegatingFilterProxy.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.clusterproxy.ClusterFilterBean.doFilter(ClusterFilterBean.java:73)
+	at com.ontotext.forest.clusterproxy.ClusterLoadBalancerFilter.doFilterInternal(ClusterLoadBalancerFilter.java:25)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.ontotext.forest.core.request.RequestFilter.doFilterInternal(RequestFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.github.ziplet.filter.compression.CompressingFilter.doFilter(CompressingFilter.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO ] 2023-08-29 13:20:47,482 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -1577598752
+[INFO ] 2023-08-29 13:20:47,495 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -1577598752 is finished
+[INFO ] 2023-08-29 13:21:35,523 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -241239855
+[INFO ] 2023-08-29 13:21:35,537 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -241239855 is finished
+[INFO ] 2023-08-29 13:22:10,831 [repositories/GuardianExample | c.o.g.s.h.GraphDBQueryResultHandler] POST query -894089709
+[INFO ] 2023-08-29 13:22:10,838 [repositories/GuardianExample | c.o.g.s.TupleQueryResultView] Request for query -894089709 is finished
